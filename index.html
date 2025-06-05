@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>xdll - public sharing site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #1f0036, #0c001a);
+      color: #fff;
+      overflow-x: hidden;
+      animation: fadeIn 2s ease-in-out;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px 100px;
+    }
+
+    .welcome {
+      font-size: 48px;
+      color: #bb86fc;
+      text-shadow: 0 0 15px #bb86fc;
+      animation: glowText 2s infinite alternate;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #d6b4ff;
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #bb86fc;
+      border-radius: 12px;
+      margin-top: 50px;
+      padding: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      backdrop-filter: blur(10px);
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .info-header {
+      font-size: 20px;
+      color: #e0aaff;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px #bb86fc;
+    }
+
+    .info-content p {
+      margin: 10px 0;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .highlight {
+      color: #ff94f4;
+      text-shadow: 0 0 10px #ff94f4;
+    }
+
+    .status {
+      color: #ffcd70;
+      text-shadow: 0 0 5px #ffcd70;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #ff7ace;
+    }
+
+    .comparison-section {
+      margin-top: 70px;
+    }
+
+    .comparison-title {
+      font-size: 24px;
+      color: #bb86fc;
+      margin-bottom: 30px;
+      text-shadow: 0 0 12px #bb86fc;
+    }
+
+    .comparison {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #bb86fc;
+      border-radius: 12px;
+      width: 360px;
+      backdrop-filter: blur(10px);
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .card-text {
+      padding: 20px;
+      text-align: left;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      left: 15px;
+      font-size: 13px;
+      color: #bb86fc;
+      text-shadow: 0 0 5px #bb86fc;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glowText {
+      from {
+        text-shadow: 0 0 10px #bb86fc, 0 0 20px #9e57f8, 0 0 30px #bb86fc;
+      }
+      to {
+        text-shadow: 0 0 20px #e9baff, 0 0 30px #a879f5, 0 0 40px #e9baff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="welcome">welcome</h1>
+    <p class="subtitle">this site is created only for sharing public files</p>
+    <a href="https://xdll.dmenu.me/x.dll" download style="display:inline-block;margin-top:20px;padding:12px 25px;background:#bb86fc;color:#fff;text-decoration:none;border-radius:8px;font-size:16px;box-shadow:0 0 12px #bb86fc;transition:0.3s ease;">
+    Download
+    </a>
+
+    <div class="info-box">
+      <div class="info-header">[/]--- x/dll's client information ---[/]</div>
+      <div class="info-content">
+        <p>menu was created by <span class="highlight">xleb.dll</span></p>
+        <p>thanks for all your support</p>
+        <p>menu status: <span class="status">[UND]</span></p>
+        <p>if, when installing a menu in your browser, it says it's a virus</p>
+        <p class="quote">"oh is it a hack? is it a virus? no, i'm not gonna install it!"</p>
+        <p>chill... a lot of browsers block cheats because our menu interacts with files and configs</p>
+        <p>if you don't trust us, ask google, ai, or even a friend about it</p>
+        <p>menu is still in beta, which means it's still in development</p>
+        <p>it has some bugs and glitches. for example: menu trail, fade, and orbit ball don't work with the round menu</p>
+        <p>so disable the round menu, enable whatever else you want — and boom, it will work</p>
+        <p>i'll fix menu trail, orbit ball, and fade later</p>
+      </div>
+    </div>
+
+    <div class="comparison-section">
+      <div class="comparison-title">don't understand the difference between the paid & free menu?</div>
+      <div class="comparison">
+        <div class="card">
+          <img src="https://lh4.googleusercontent.com/mmE1bkicCq7RtgPHqRLJlhX0gbG-eDagaOmldJ_nBLH0aqQf6VvyqQ9h-xN2xP9TEa9g0G4xVSGYGwfLr_yREhGhf8S-uNmNxAh9h75SdqDU-3VbhI3v3WBMUbKaDg-H0CfSpXO0309wPnzg_r8xQD0ksHvQ4MGcjEMD1KUnA1D--lxoVSkL9g=w1280" alt="Free Version">
+          <div class="card-text">
+            that's the free version you can get right now. it's cool, yeah... *BUT*<br><br>
+            undetected mods ✓<br>
+            cool & fun stuff ✓<br>
+            cool themes & color changers ✓<br>
+            fully customizable menu ✓<br>
+            and a lot more ✓
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://lh5.googleusercontent.com/kaixKY8LRvrJFUnE_UoORgpqar7DuPyD97Bh9XAiIPiJKEASmdlKfW4dKCLpeKi8QFlwZBaDMtgwcx3Kgr1TvHet3dBFx_qutyi5rN0TxdQuc1t32WllZhN3qeKRuyszVup3aufiAU1BumugO56XZfXoitp0j1eJtVydujAiJ_tjHdby8JwBvw=w1280" alt="Paid Version">
+          <div class="card-text">
+            that's the paid version (which you can still get for free). it's also cool, yeah... *BUT*<br><br>
+            undetected mods ✓<br>
+            cool & fun stuff ✓<br>
+            cool themes & color changers ✓<br>
+            fully customizable menu ✓<br>
+            better and more comfortable interface ✓<br>
+            better mods ✓<br>
+            better menu sounds & optimization ✓<br>
+            more mods & more stuff to do ✓<br>
+            working SS projectile spammers ✓<br>
+            critter mods ✓<br>
+            and a lot more...<br><br>
+            to know what's next — join our discord (link in site) 👀
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    menu made by xleb(xleb.dll on discord)<br><br>
+    page made by Davuks (DProd CEO and Creator of DMenu)<br>
+    copyright DProd 2025 ©
+  </div>
+</body>
+</html>
